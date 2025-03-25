@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: will-app-service
+  name: tsuchen-app-service
   namespace: dev
   labels:
-    app: will
+    app: tsuchen
 spec:
   type: LoadBalancer
   selector:
-    app: will
+    app: tsuchen
   ports:
     - protocol: TCP
       port: 80
