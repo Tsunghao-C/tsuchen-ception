@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: will-app-deployment
+  name: tsuchen-app-deployment
   labels:
-    app: will
+    app: tsuchen
   namespace: dev
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: will
+      app: tsuchen
   template:
     metadata:
       labels:
-        app: will
+        app: tsuchen
     spec:
       containers:
-      - name: will
+      - name: tsuchen
         image: wil42/playground:v1
         ports:
         - containerPort: 8888
