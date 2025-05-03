@@ -6,7 +6,7 @@ metadata:
   labels:
     app: tsuchen
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: tsuchen
   ports:
