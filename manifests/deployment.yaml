@@ -6,7 +6,7 @@ metadata:
     app: tsuchen
   namespace: dev
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: tsuchen
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: tsuchen
-        image: wil42/playground:v1
+        image: wil42/playground:v2
         ports:
         - containerPort: 8888
